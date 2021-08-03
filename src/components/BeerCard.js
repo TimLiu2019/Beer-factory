@@ -18,10 +18,8 @@ const BeerCard = ({ beer }) => {
   const [btnText, setBtnText] = useState("show details");
   const showHideDetail = () => {
     if (btnText === "show details") {
-      console.log(btnText);
       setBtnText("hide details");
     } else {
-      console.log(btnText);
       setBtnText("show details");
     }
   };

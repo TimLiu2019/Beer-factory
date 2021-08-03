@@ -9,13 +9,11 @@ const Dashboard = () => {
   useEffect(() => {
     getBeers().then(res => {
       setBeers(res.data);
-      console.log("get beers", res.data);
     });
   }, []);
 
   const placeholder = "Search...";
   const handleSearch = query => {
-    console.log("search", query);
     setQuery(query);
   };
 
