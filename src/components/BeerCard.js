@@ -35,13 +35,22 @@ const BeerCard = ({ beer }) => {
           className="beer-img"
           style={
             btnText === "hide details"
-              ? { maxWidth: "280px", maxHeight: "280px" }
+              ? { maxWidth: "320px", maxHeight: "320px" }
               : { maxWidth: "180px", maxHeight: "180px" }
           }
         />
       </div>
       <div className="beer-info">
-        <p className="name">{name}</p>
+        <p
+          className="name"
+          style={
+            btnText !== "hide details"
+              ? { marginTop: "15%" }
+              : { marginTop: "5%" }
+          }
+        >
+          {name}
+        </p>
         <p>{tagline}</p>
         <div
           className="btn-box"
